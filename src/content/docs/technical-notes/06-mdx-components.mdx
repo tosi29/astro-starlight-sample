@@ -1,0 +1,25 @@
+---
+title: "MDXコンポーネント実験"
+description: "Starlightコンポーネントと独自コンポーネント"
+---
+
+
+import { Card, CardGrid, Aside } from '@astrojs/starlight/components';
+import DecisionBadge from '../../../components/DecisionBadge.astro';
+
+<DecisionBadge status="accepted" owner="サンプル運用" />
+
+## Starlightカード
+
+<CardGrid>
+  <Card title="調査メモ" icon="magnifying-glass">
+    比較表と出典メモをまとめる用途に向きます。
+  </Card>
+  <Card title="ADR" icon="seti:config">
+    後から理由を説明したい判断を保存します。
+  </Card>
+</CardGrid>
+
+<Aside type="caution" title="MDXの注意">
+  表現力は上がりますが、Markdownだけのページより編集者に要求する知識は増えます。
+</Aside>

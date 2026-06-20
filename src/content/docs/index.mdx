@@ -1,0 +1,34 @@
+---
+title: "Starlight Knowledge Prototype"
+description: "AI会話ログや技術メモを体系化するサンプルサイト"
+sidebar:
+  order: 1
+---
+
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+このサイトは、Astro Starlightを「AI会話ログ・技術メモ・調査メモ・判断メモを、他人にも読ませやすいドキュメントサイトにする」用途で評価するためのプロトタイプです。
+
+![知識化フロー](/astro-starlight-sample/images/knowledge-flow.svg)
+
+## まず見るページ
+
+<CardGrid>
+  <Card title="機能確認ガイド" icon="rocket">
+    どのページでどのStarlight機能を確認できるかを一覧できます。
+  </Card>
+  <Card title="AIログ再編集サンプル" icon="pencil">
+    会話ログを読者向け記事へ変換する前後関係を確認できます。
+  </Card>
+  <Card title="ADRサンプル" icon="seti:config">
+    判断メモをStarlightに載せるときの見え方を確認できます。
+  </Card>
+</CardGrid>
+
+## 評価したいこと
+
+- サイドバーと章立てが30ページ程度で破綻しないか
+- 検索、目次、表、コード、画像、MDXコンポーネントが実用になるか
+- 自分用メモと読者向けドキュメントの境界を作りやすいか
+- GitHub Pagesの`docs/`公開で運用できるか

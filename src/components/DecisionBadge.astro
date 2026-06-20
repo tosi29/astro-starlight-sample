@@ -1,0 +1,29 @@
+---
+interface Props {
+  status: 'proposed' | 'accepted' | 'deprecated';
+  owner?: string;
+}
+const { status, owner = 'ドキュメント運用チーム' } = Astro.props;
+const label = { proposed: '提案中', accepted: '採用', deprecated: '非推奨' }[status];
+---
+<div class={`decision-badge decision-badge-${status}`}>
+  <strong>{label}</strong>
+  <span>担当: {owner}</span>
+</div>
+
+<style>
+  .decision-badge {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    width: fit-content;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 999px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.9rem;
+    background: var(--sl-color-gray-6);
+  }
+  .decision-badge-accepted strong { color: var(--sl-color-green-high); }
+  .decision-badge-proposed strong { color: var(--sl-color-blue-high); }
+  .decision-badge-deprecated strong { color: var(--sl-color-red-high); }
+</style>
