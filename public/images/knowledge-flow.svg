@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+  <title id="title">知識化フロー</title>
+  <desc id="desc">会話ログから公開ドキュメントまでの流れ</desc>
+  <rect width="960" height="360" rx="28" fill="#f7fbff"/>
+  <g font-family="system-ui, sans-serif" font-size="22" text-anchor="middle">
+    <g transform="translate(150 180)"><circle r="72" fill="#d9f0ff"/><text y="-8">会話ログ</text><text y="24" font-size="15">素材を残す</text></g>
+    <g transform="translate(380 180)"><circle r="72" fill="#dcfce7"/><text y="-8">再編集</text><text y="24" font-size="15">読者向けに整える</text></g>
+    <g transform="translate(610 180)"><circle r="72" fill="#ede9fe"/><text y="-8">章立て</text><text y="24" font-size="15">探索できる形へ</text></g>
+    <g transform="translate(840 180)"><circle r="72" fill="#fff7ed"/><text y="-8">公開Docs</text><text y="24" font-size="15">検索・共有</text></g>
+  </g>
+  <g stroke="#64748b" stroke-width="5" marker-end="url(#arrow)"><path d="M230 180h70"/><path d="M460 180h70"/><path d="M690 180h70"/></g>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
+</svg>
